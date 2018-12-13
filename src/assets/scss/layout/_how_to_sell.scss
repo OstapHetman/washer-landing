@@ -1,0 +1,41 @@
+#how-to-sell {
+  margin-top: 35px;
+  .container {
+    background: url("assets/images/washer-bg.png");
+    background-size: inherit;
+    background-position: left bottom;
+    background-repeat: no-repeat no-repeat;
+    padding-bottom: 75px;
+  }
+  h2 {
+    @include font("LatoRegular", 44px, 700, normal);
+    color: #f0ed08;
+  }
+  .sell-item {
+    margin-top: 80px;
+    border-radius: 5px;
+    background: rgba(236, 244, 250, 0.4);
+    padding: 35px 30px 35px 30px;
+    max-width: 295px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    &__step {
+      margin-bottom: 30px;
+    }
+    &__title {
+      h6 {
+        @include font("OpenSans-Regular", 25px, 300, normal);
+        color: #000;
+        margin-bottom: 0;
+      }
+      margin-bottom: 20px;
+    }
+    &__info {
+      p {
+        @include font("LatoLight", 14px, 300, normal);
+        color: #000;
+      }
+    }
+  }
+}

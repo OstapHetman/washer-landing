@@ -1,5 +1,40 @@
 // Import Fonts
 @font-face {
-  font-family: "FontName";
-  src: url("../assets/fonts/FontName.ttf") format("truetype");
+  font-family: "LatoLight";
+  src: url("assets/fonts/LatoLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("assets/fonts/LatoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansBlack";
+  src: url("assets/fonts/MuseoSansBlack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MuseoSansBold";
+  src: url("assets/fonts/MuseoSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("assets/fonts/Gilroy.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-ExtraBold";
+  src: url("assets/fonts/OpenSans-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("assets/fonts/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("assets/fonts/OpenSans-Regular.ttf") format("truetype");
 }

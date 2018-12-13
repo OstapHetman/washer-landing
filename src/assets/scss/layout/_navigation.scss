@@ -1,0 +1,28 @@
+nav.navbar {
+  box-shadow: 3px 5px 53px 12px rgba(0, 0, 0, 0.32);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #fff;
+  .collapse {
+    ul {
+      display: flex;
+      align-items: center;
+      li {
+        a.nav-link {
+          @include font("OpenSans-Bold", 15px, 300, normal);
+          color: #000;
+        }
+        &.get-call {
+          margin-left: 35px;
+          a.nav-link {
+            @include font("LatoLight", 17px, 300, normal);
+            color: #fff;
+            border-radius: 5px;
+            background: rgba(125, 237, 245, 0.98) 0%;
+            padding: 10px 35px 10px 35px;
+          }
+        }
+      }
+    }
+  }
+}

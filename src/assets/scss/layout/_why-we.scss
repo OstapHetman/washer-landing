@@ -1,0 +1,42 @@
+#why-we {
+  margin-top: 80px;
+  .container {
+    background: url("assets/images/why-we-bg.png");
+    background-size: inherit;
+    background-position: left top;
+    background-repeat: no-repeat no-repeat;
+  }
+  h2 {
+    @include font("LatoRegular", 60px, 700, normal);
+    color: #12d3e2;
+  }
+  .feature-item {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    &__num {
+      p {
+        @include font("OpenSans-ExtraBold", 100px, 400, normal);
+        color: #50dae7;
+      }
+    }
+    &__info {
+      margin-left: 35px;
+      p {
+        @include font("OpenSans-Regular", 34px, 400, normal);
+        color: #000000;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .action {
+    margin-top: 80px;
+    button {
+      @include font("LatoRegular", 50px, 300, normal);
+      color: #000000;
+      border-radius: 27px;
+      background-color: #f6f30e;
+      padding: 8px 45px;
+    }
+  }
+}

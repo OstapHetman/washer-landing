@@ -1,0 +1,50 @@
+#info-call {
+  .wrapper {
+    background: #12d3e2;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 45px;
+    &__info {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-right: 20px;
+      }
+      .text {
+        p {
+          @include font("OpenSans-Regular", 21px, 300, -0.84px);
+          line-height: 20px;
+          color: #fff;
+        }
+      }
+    }
+    &__form {
+      form {
+        display: flex;
+        position: relative;
+        height: 46px;
+        input {
+          border-radius: 23px;
+          background-color: #fbfbfb;
+          @include font("OpenSans-Regular", 18px, 900, -0.72px);
+          color: #413f3f;
+          min-width: 370px;
+          height: 100%;
+          padding-left: 20px;
+        }
+        button {
+          position: absolute;
+          right: 0;
+          top: 0;
+          border-radius: 22px;
+          background-color: #f6f30e;
+          color: #747474;
+          @include font("MuseoSansBlack", 18px, 900, -0.72px);
+          height: 100%;
+        }
+      }
+    }
+  }
+}
