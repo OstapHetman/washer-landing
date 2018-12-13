@@ -659,8 +659,12 @@
     <!-- End Section: FAQ -->
 
     <!-- Start Section: Map -->
-    <section id="map">
+    <section id="map-section">
       <div class="container-fluid px-0">
+
+        <div id="map" style="height: 350px; width: 100%">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0835927663675!2d30.620836815295558!3d50.40227969871644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5b1d7b73963%3A0x90b58030fa85f2de!2z0LLRg9C70LjRhtGPINCa0L3Rj9C20LjQuSDQl9Cw0YLQvtC9LCAxMSwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1544730413988" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 
         <div class="over-info">
           <div class="location">
@@ -749,6 +753,8 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKHZr8CnfMYYYCgLvJhncP7MeyHPXnK6w&callback=initMap"
+    async defer></script>
     <!-- Main script -->
     <script src="assets/js/app.js"></script>
   </body>
