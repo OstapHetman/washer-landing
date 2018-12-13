@@ -1,0 +1,17 @@
+{
+  "name": "project_template",
+  "version": "1.0.0",
+  "description": "It's template for my projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass -w src/assets/scss/ -o src/ --output-style compressed && postcss -u autoprefixer -b 'latest 2 versions'"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "Ostap Hetman",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
