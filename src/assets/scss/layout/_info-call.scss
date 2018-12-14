@@ -25,7 +25,7 @@
         display: flex;
         position: relative;
         height: 46px;
-        input {
+        input[type="text"] {
           border-radius: 23px;
           background-color: #fbfbfb;
           @include font("OpenSans-Light", 18px, 900, -0.72px);
@@ -34,7 +34,7 @@
           height: 100%;
           padding-left: 20px;
         }
-        button {
+        input[type="submit"] {
           position: absolute;
           right: 0;
           top: 0;
@@ -43,6 +43,103 @@
           color: #747474;
           @include font("MuseoSansBold", 18px, 300, -0.72px);
           height: 100%;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1999px) {
+    .wrapper {
+      &__info {
+        .icon {
+          img {
+            max-width: 35px;
+          }
+        }
+        .text {
+          p {
+            font-size: 16px;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+      &__form {
+        form {
+          input[type="text"],
+          input[type="submit"] {
+            font-size: 16px;
+          }
+          input[type="text"] {
+            min-width: 330px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+    .wrapper {
+      flex-direction: column;
+      &__info {
+        .icon {
+          img {
+            max-width: 35px;
+          }
+        }
+        .text {
+          p {
+            font-size: 16px;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+      &__form {
+        padding-top: 20px;
+        form {
+          input[type="text"],
+          input[type="submit"] {
+            font-size: 16px;
+          }
+          input[type="text"] {
+            min-width: 330px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .wrapper {
+      flex-direction: column;
+      padding: 20px 25px;
+      &__info {
+        .icon {
+          img {
+            max-width: 30px;
+          }
+        }
+        .text {
+          p {
+            font-size: 14px;
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+      &__form {
+        padding-top: 20px;
+        form {
+          input[type="text"],
+          input[type="submit"] {
+            font-size: 13px;
+          }
+          input[type="text"] {
+            min-width: 270px;
+          }
         }
       }
     }

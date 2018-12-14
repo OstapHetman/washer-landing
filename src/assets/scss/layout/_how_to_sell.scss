@@ -38,4 +38,65 @@
       }
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    h2 {
+      font-size: 36px;
+    }
+    .sell-item {
+      &__step {
+        img {
+          max-width: 100px;
+        }
+      }
+      &__title {
+        h6 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    margin-top: 25px;
+    h2 {
+      font-size: 32px;
+    }
+    .sell-item {
+      padding: 30px 25px 30px 25px;
+      &__step {
+        img {
+          max-width: 100px;
+        }
+      }
+      &__title {
+        h6 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .container {
+      padding-bottom: 35px;
+    }
+    margin-top: 25px;
+    h2 {
+      font-size: 22px;
+    }
+    .sell-item {
+      padding: 20px 10px 20px 10px;
+      margin-top: 40px;
+      &__step {
+        img {
+          max-width: 75px;
+        }
+      }
+      &__title {
+        h6 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
 }

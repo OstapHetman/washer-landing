@@ -48,4 +48,86 @@
       }
     }
   }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .over-info {
+      padding: 25px 30px;
+      top: 75px;
+      left: 35px;
+      .location,
+      .phone,
+      .email {
+        .icon {
+          img {
+            max-width: 35px;
+          }
+        }
+        .text {
+          p,
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .over-info {
+      padding: 15px 15px;
+      top: 130px;
+      left: 20px;
+      .location,
+      .phone,
+      .email {
+        .icon {
+          img {
+            max-width: 20px;
+          }
+        }
+        .text {
+          p,
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .phone,
+      .email {
+        padding-top: 15px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .over-info {
+      order: 1;
+      position: relative;
+      padding: 25px 15px;
+      left: 0;
+      top: 0;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .location,
+      .phone,
+      .email {
+        .icon {
+          img {
+            max-width: 30px;
+          }
+        }
+        .text {
+          p,
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+      .phone,
+      .email {
+        padding-top: 15px;
+      }
+    }
+  }
 }

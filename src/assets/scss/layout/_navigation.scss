@@ -3,7 +3,17 @@ nav.navbar {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #fff;
-  .collapse {
+  .navbar-toggler {
+    border: 0;
+    z-index: 999;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .navbar-brand {
+    z-index: 999;
+  }
+  .navbar-collapse {
     ul {
       display: flex;
       align-items: center;
@@ -53,6 +63,52 @@ nav.navbar {
               box-shadow: 0 0 42px 4px rgba(125, 237, 245, 0.98);
               transform: scale(1.03);
               opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    a.navbar-brand {
+      img {
+        max-width: 110px;
+        height: auto;
+      }
+    }
+  }
+  @media screen and (max-width: 1199px) {
+    .navbar-collapse {
+      background: rgba(255, 255, 255, 0.93);
+      position: fixed !important;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 100;
+      height: 100vh;
+      transition: all 0.1s ease-in-out !important;
+      ul {
+        transition: all 0.1s ease-in-out;
+        height: 100%;
+        justify-content: center;
+        li {
+          &:not(:last-child) {
+            margin-left: 0;
+          }
+          &:last-child {
+            display: none;
+          }
+          a.nav-link {
+            font-size: 20px;
+            line-height: 50px;
+            padding: 0;
+            &.active {
+              &:before {
+                bottom: 0;
+                width: 20%;
+              }
             }
           }
         }

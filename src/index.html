@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Start Naviation -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="index.html"
           ><img src="assets/images/brand.png" alt="Brand"
@@ -64,9 +64,9 @@
       <div class="container">
         <div class="row">
           <!-- Left -->
-          <div class="col-lg-7 col-xl-7">
+          <div class="col-md-8 col-lg-7 col-xl-7">
             <h1>Продажа и скупка Б/У стиральных машин в Киеве</h1>
-            <img src="assets/images/wave-icon.png" alt="Wave">
+            <img class="wave" src="assets/images/wave-icon.png" alt="Wave">
             <div class="features">
               <ul class="list-unstyled mb-0 pl-0">
                 <li>100% рабочие</li>
@@ -75,12 +75,12 @@
               </ul>
             </div>
             <div class="actions">
-              <a href="#" class="btn primary-btn">Перейти в каталог</a>
+              <a href="#catalog" class="btn primary-btn smooth-scroll">Перейти в каталог</a>
               <a href="#" class="btn secondary-btn">Оставить заявку</a>
             </div>
           </div>
           <!-- Right -->
-          <div class="col-lg-5 col-xl-5">
+          <div class="col-md-4 col-lg-5 col-xl-5">
             <div class="wahser-image">
               <img src="assets/images/washer-header.png" alt="Washing machine">
             </div>
@@ -99,7 +99,7 @@
           </div>
 
           <!-- Start Item -->
-          <div class="col-sm-6 col-md-4 col-xl-4 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-xl-4 col-lg-4">
             <div class="buy-item text-center">
               <div class="buy-item__step">
                 <img src="assets/images/step1_1.png" alt="Step icon">
@@ -117,7 +117,7 @@
           <!-- End Item -->
 
           <!-- Start Item -->
-          <div class="col-sm-6 col-md-4 col-xl-4 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-xl-4 col-lg-4">
             <div class="buy-item text-center">
               <div class="buy-item__step">
                 <img src="assets/images/step2_1.png" alt="Step icon">
@@ -135,7 +135,7 @@
             <!-- End Item -->
 
             <!-- Start Item -->
-          <div class="col-sm-6 col-md-4 col-xl-4 col-lg-4">
+          <div class="col-sm-6 col-md-6 col-xl-4 col-lg-4">
             <div class="buy-item text-center">
               <div class="buy-item__step">
                 <img src="assets/images/step3_1.png" alt="Step icon">
@@ -228,7 +228,7 @@
     <section id="info-call">
       <div class="container">
         <div class="row">
-          <div class="col-md-11 col-lg-11 col-xl-11 mx-auto">
+          <div class="col-md-12 col-lg-11 col-xl-11 mx-auto">
             <div class="wrapper">
               <div class="wrapper__info">
                 <div class="icon">
@@ -242,7 +242,7 @@
               <div class="wrapper__form">
                 <form action="#">
                   <input class="form-control" type="text" name="phone_number" placeholder="+38 (066) 451-80-24" id="phone_number">
-                  <button class="btn" type="submit">Отправить заявку</button>
+                  <input class="btn" type="submit" value="Отправить заявку">
                 </form>
               </div>
             </div>
@@ -662,10 +662,6 @@
     <section id="map-section">
       <div class="container-fluid px-0">
 
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0834103332036!2d30.618648115295553!3d50.40228309871623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI0JzA4LjIiTiAzMMKwMzcnMTUuMCJF!5e0!3m2!1suk!2sua!4v1544764901330" allowfullscreen></iframe>
-        </div>
-
         <div class="over-info">
           <div class="location">
             <div class="icon">
@@ -688,7 +684,7 @@
           </div>
 
           <div class="email">
-            <div class="mail">
+            <div class="icon">
               <img src="assets/images/mail-icon.png" alt="Icon">
             </div>
             <div class="text">
@@ -696,6 +692,10 @@
               <a href="mailto:admin@mark-lab.biz">admin@mark-lab.biz</a>
             </div>
           </div>
+        </div>
+        
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0834103332036!2d30.618648115295553!3d50.40228309871623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI0JzA4LjIiTiAzMMKwMzcnMTUuMCJF!5e0!3m2!1suk!2sua!4v1544764901330" allowfullscreen></iframe>
         </div>
 
       </div>
@@ -706,11 +706,11 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-xl-2 align-self-center">
+          <div class="col-sm-6 col-md-4 col-lg-2 col-xl-2 align-self-center brand">
             <img src="assets/images/brand.png" alt="Brand">
           </div>
 
-          <div class="col-lg-2 col-xl-2 align-self-center menu">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 align-self-center menu">
             <ul class="list-unstyled mb-0 pl-0">
               <li><a class="smooth-scroll hover-underline-animation" href="#how-to-buy">Как купить</a></li>
               <li><a class="smooth-scroll hover-underline-animation" href="#how-to-sell">Как продать</a></li>
@@ -718,7 +718,7 @@
             </ul>
           </div>
 
-          <div class="col-lg-2 col-xl-2 align-self-center menu">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-2 col-xl-2 align-self-center menu">
             <ul class="list-unstyled mb-0 pl-0">
               <li><a class="smooth-scroll hover-underline-animation" href="#info-call">Связаться с нами</a></li>
               <li><a class="smooth-scroll hover-underline-animation" href="#why-we">Почему мы</a></li>
@@ -726,7 +726,7 @@
             </ul>
           </div>
 
-          <div class="offset-xl-1 offset-lg-1 col-lg-5 col-xl-5 align-self-center last-col">
+          <div class="col-sm-6 col-md-8 offset-xl-1 col-lg-6 col-xl-5 align-self-center last-col">
             <div class="phones">
               <ul class="list-unstyled mb-0 pl-0">
                 <li><a href="tel:+380664518024">+38 (066) 451-80-24</a></li>
