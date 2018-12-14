@@ -28,7 +28,7 @@
         input {
           border-radius: 23px;
           background-color: #fbfbfb;
-          @include font("OpenSans-Regular", 18px, 900, -0.72px);
+          @include font("OpenSans-Light", 18px, 900, -0.72px);
           color: #413f3f;
           min-width: 370px;
           height: 100%;
@@ -41,7 +41,7 @@
           border-radius: 22px;
           background-color: #f6f30e;
           color: #747474;
-          @include font("MuseoSansBlack", 18px, 900, -0.72px);
+          @include font("MuseoSansBold", 18px, 300, -0.72px);
           height: 100%;
         }
       }

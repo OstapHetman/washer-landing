@@ -31,12 +31,18 @@
   }
   .action {
     margin-top: 80px;
-    button {
+    button.btn {
       @include font("LatoRegular", 50px, 300, normal);
       color: #000000;
       border-radius: 27px;
       background-color: #f6f30e;
       padding: 8px 45px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        box-shadow: 0 0 42px 4px #f6f30e;
+        transform: scale(1.03);
+        opacity: 0.8;
+      }
     }
   }
 }

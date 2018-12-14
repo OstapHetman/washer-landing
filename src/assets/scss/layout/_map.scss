@@ -1,0 +1,51 @@
+#map-section {
+  min-height: 455px;
+  position: relative;
+  margin-top: 40px;
+  #map {
+    iframe {
+      min-height: 455px;
+      height: 100%;
+      width: 100%;
+      border: 0;
+    }
+  }
+  .over-info {
+    position: absolute;
+    padding: 40px 60px;
+    top: 45px;
+    left: 85px;
+    background: rgba(30, 145, 201, 0.6);
+    .location,
+    .phone,
+    .email {
+      display: flex;
+      align-items: center;
+      p {
+        margin-bottom: 0;
+      }
+      .text {
+        display: flex;
+        flex-direction: column;
+        padding-left: 17px;
+        p,
+        a {
+          @include font("LatoRegular", 19px, 900, 0.95px);
+          line-height: 25px;
+          color: #ffffff;
+        }
+      }
+    }
+    .phone,
+    .email {
+      padding-top: 50px;
+      a {
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          text-decoration: none;
+          color: #f6f30e;
+        }
+      }
+    }
+  }
+}

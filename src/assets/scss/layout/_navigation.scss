@@ -8,9 +8,37 @@ nav.navbar {
       display: flex;
       align-items: center;
       li {
+        &:not(:last-child) {
+          margin-left: 25px;
+        }
         a.nav-link {
           @include font("OpenSans-Bold", 15px, 300, normal);
           color: #000;
+          padding: 0;
+          transition: opacity 0.25s ease-out;
+          &:hover {
+            opacity: 0.6;
+          }
+          &.hover-underline-animation {
+            display: inline-block;
+            position: relative;
+          }
+          &.hover-underline-animation::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+          }
+          &.hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+          }
         }
         &.get-call {
           margin-left: 35px;
@@ -20,6 +48,12 @@ nav.navbar {
             border-radius: 5px;
             background: rgba(125, 237, 245, 0.98) 0%;
             padding: 10px 35px 10px 35px;
+            transition: all 0.5s ease-in-out;
+            &:hover {
+              box-shadow: 0 0 42px 4px rgba(125, 237, 245, 0.98);
+              transform: scale(1.03);
+              opacity: 0.8;
+            }
           }
         }
       }

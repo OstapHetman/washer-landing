@@ -6,6 +6,7 @@ header {
   background-repeat: no-repeat no-repeat;
   color: #fff;
   position: relative;
+  min-height: 475px;
   &:after {
     content: "";
     position: absolute;
@@ -54,6 +55,11 @@ header {
       border-radius: 27px;
       background-color: #f6f30e;
       padding: 12px 30px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        box-shadow: 0 0 42px 4px #f6f30e;
+        opacity: 0.8;
+      }
     }
     .secondary-btn {
       color: #ffffff;
@@ -61,10 +67,15 @@ header {
       background-color: #0f8d97;
       padding: 12px 20px;
       margin-left: 15px;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        box-shadow: 0 0 42px 4px #0f8d97;
+        opacity: 0.8;
+      }
     }
   }
   .wahser-image {
-    margin-top: 100px;
+    margin-top: 135px;
     img {
       max-width: 385px;
       width: 100%;

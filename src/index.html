@@ -26,7 +26,7 @@
     <!-- Start Naviation -->
     <nav class="navbar navbar-expand-md navbar-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="/"
+        <a class="navbar-brand" href="index.html"
           ><img src="assets/images/brand.png" alt="Brand"
         /></a>
         <button
@@ -44,15 +44,15 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"
+              <a class="nav-link smooth-scroll hover-underline-animation" href="#how-to-buy"
                 >Как купить</a
               >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#">Как продать</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Каталог</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Почему мы</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Связаться с нами</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#how-to-sell">Как продать</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#catalog">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#why-we">Почему мы</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#faq">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#info-call">Связаться с нами</a></li>
             <li class="nav-item get-call"><a class="nav-link" href="#">Заказать звонок</a></li>
         </div>
       </div>
@@ -241,7 +241,7 @@
               </div>
               <div class="wrapper__form">
                 <form action="#">
-                  <input class="form-control" type="text" name="phone_number" placeholder="+380">
+                  <input class="form-control" type="text" name="phone_number" placeholder="+38 (066) 451-80-24" id="phone_number">
                   <button class="btn" type="submit">Отправить заявку</button>
                 </form>
               </div>
@@ -662,8 +662,8 @@
     <section id="map-section">
       <div class="container-fluid px-0">
 
-        <div id="map" style="height: 350px; width: 100%">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0835927663675!2d30.620836815295558!3d50.40227969871644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c5b1d7b73963%3A0x90b58030fa85f2de!2z0LLRg9C70LjRhtGPINCa0L3Rj9C20LjQuSDQl9Cw0YLQvtC9LCAxMSwg0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1544730413988" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.0834103332036!2d30.618648115295553!3d50.40228309871623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDI0JzA4LjIiTiAzMMKwMzcnMTUuMCJF!5e0!3m2!1suk!2sua!4v1544764901330" allowfullscreen></iframe>
         </div>
 
         <div class="over-info">
@@ -687,7 +687,7 @@
             </div>
           </div>
 
-          <div class="location">
+          <div class="email">
             <div class="mail">
               <img src="assets/images/mail-icon.png" alt="Icon">
             </div>
@@ -706,43 +706,44 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-2 col-xl-2">
+          <div class="col-lg-2 col-xl-2 align-self-center">
             <img src="assets/images/brand.png" alt="Brand">
           </div>
 
-          <div class="col-lg-2 col-xl-2 menu">
+          <div class="col-lg-2 col-xl-2 align-self-center menu">
             <ul class="list-unstyled mb-0 pl-0">
-              <li><a href="#">Как купить</a></li>
-              <li><a href="#">Как продать</a></li>
-              <li><a href="#">Каталог</a></li>
+              <li><a class="smooth-scroll hover-underline-animation" href="#how-to-buy">Как купить</a></li>
+              <li><a class="smooth-scroll hover-underline-animation" href="#how-to-sell">Как продать</a></li>
+              <li><a class="smooth-scroll hover-underline-animation" href="#catalog">Каталог</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2 col-xl-2 menu">
+          <div class="col-lg-2 col-xl-2 align-self-center menu">
             <ul class="list-unstyled mb-0 pl-0">
-              <li><a href="#">Связаться с нами</a></li>
-              <li><a href="#">Почему мы</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a class="smooth-scroll hover-underline-animation" href="#info-call">Связаться с нами</a></li>
+              <li><a class="smooth-scroll hover-underline-animation" href="#why-we">Почему мы</a></li>
+              <li><a class="smooth-scroll hover-underline-animation" href="#faq">FAQ</a></li>
             </ul>
           </div>
 
-          <div class="offset-lg-1 offset-xl-1 col-lg-2 col-xl-2 phones">
-            <ul class="list-unstyled mb-0 pl-0">
-              <li><a href="tel:+380664518024">+38 (066) 451-80-24</a></li>
-              <li><a href="tel:+380932805646">+38 (093) 280-56-46</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-xl-3 action">
-            <button class="btn">
-              Заказать звонок
-            </button>
+          <div class="offset-xl-1 offset-lg-1 col-lg-5 col-xl-5 align-self-center last-col">
+            <div class="phones">
+              <ul class="list-unstyled mb-0 pl-0">
+                <li><a href="tel:+380664518024">+38 (066) 451-80-24</a></li>
+                <li><a href="tel:+380932805646">+38 (093) 280-56-46</a></li>
+              </ul>
+            </div>
+            <div class="action">
+              <button class="btn">
+                Заказать звонок
+              </button>
+            </div>
           </div>
         </div>
         <div class="row copyright">
           <div class="col-12 text-center">
             <p>Copyright © 2013-2018.</p>
-            <p>Разработка сайта <a href="http://mark-lab.biz/">“Mark-Lab”</a></p>
+            <p>Разработка сайта <a href="http://mark-lab.biz/" target="_blank">“Mark-Lab”</a></p>
           </div>
         </div>
       </div>
@@ -753,6 +754,7 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
     <!-- Main script -->
     <script src="assets/js/app.js"></script>
   </body>
