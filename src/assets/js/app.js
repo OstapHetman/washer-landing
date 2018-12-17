@@ -28,3 +28,12 @@ $(document).ready(function() {
     } // End if
   });
 });
+
+const catalogBtns = document.querySelectorAll(".catalog_btn");
+const modalHidden = document.querySelector("#catalog_product_hidden");
+catalogBtns.forEach(btn => {
+  btn.addEventListener("click", function(event) {
+    let productName = event.target.getAttribute("data-name");
+    modalHidden.value = productName;
+  });
+});

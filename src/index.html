@@ -53,7 +53,7 @@
             <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#why-we">Почему мы</a></li>
             <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#faq">FAQ</a></li>
             <li class="nav-item"><a class="nav-link smooth-scroll hover-underline-animation" href="#info-call">Связаться с нами</a></li>
-            <li class="nav-item get-call"><a class="nav-link" href="#">Заказать звонок</a></li>
+            <li class="nav-item get-call"><a class="nav-link" href="#" data-toggle="modal" data-target="#getCall">Заказать звонок</a></li>
         </div>
       </div>
     </nav>
@@ -76,7 +76,7 @@
             </div>
             <div class="actions">
               <a href="#catalog" class="btn primary-btn smooth-scroll">Перейти в каталог</a>
-              <a href="#" class="btn secondary-btn">Оставить заявку</a>
+              <a href="#" class="btn secondary-btn" data-toggle="modal" data-target="#getFeedback">Оставить заявку</a>
             </div>
           </div>
           <!-- Right -->
@@ -273,7 +273,7 @@
                 <h6>3200 грн.</h6>
               </div>
               <div class="product-item__action">
-                <button class="btn">Оставить заявку</button>
+                <button class="btn catalog_btn" data-toggle="modal" data-target="#catalogModal" data-name="SAMSUNG SMALL • 5 КГ">Оставить заявку</button>
               </div>
             </div>
           </div>
@@ -292,7 +292,7 @@
                 <h6>3200 грн.</h6>
               </div>
               <div class="product-item__action">
-                <button class="btn">Оставить заявку</button>
+                <button class="btn catalog_btn" data-toggle="modal" data-target="#catalogModal" data-name="SAMSUNG SMALL • 2 КГ">Оставить заявку</button>
               </div>
             </div>
           </div>
@@ -311,7 +311,7 @@
                 <h6>3200 грн.</h6>
               </div>
               <div class="product-item__action">
-                <button class="btn">Оставить заявку</button>
+                <button class="btn catalog_btn" data-toggle="modal" data-target="#catalogModal" data-name="SAMSUNG SMALL • 6 КГ">Оставить заявку</button>
               </div>
             </div>
           </div>
@@ -330,7 +330,7 @@
                 <h6>3200 грн.</h6>
               </div>
               <div class="product-item__action">
-                <button class="btn">Оставить заявку</button>
+                <button class="btn catalog_btn" data-toggle="modal" data-target="#catalogModal" data-name="SAMSUNG LARGE • 12 КГ">Оставить заявку</button>
               </div>
             </div>
           </div>
@@ -349,7 +349,7 @@
                 <h6>3200 грн.</h6>
               </div>
               <div class="product-item__action">
-                <button class="btn">Оставить заявку</button>
+                <button class="btn catalog_btn" data-toggle="modal" data-target="#catalogModal" data-name="SAMSUNG SMALL • 7 КГ">Оставить заявку</button>
               </div>
             </div>
           </div>
@@ -445,7 +445,7 @@
 
           <div class="col-12">
             <div class="action text-center">
-              <button class="btn">Связаться с нами</button>
+              <button class="btn" data-toggle="modal" data-target="#getFeedback">Связаться с нами</button>
             </div>
           </div>
 
@@ -734,7 +734,7 @@
               </ul>
             </div>
             <div class="action">
-              <button class="btn">
+              <button class="btn" data-toggle="modal" data-target="#getCall">
                 Заказать звонок
               </button>
             </div>
@@ -749,6 +749,109 @@
       </div>
     </footer>
     <!-- End Footer -->
+
+    <!-- Start Modal Заказать звонок -->
+    <div class="modal fade mainModals" id="getCall" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="container">
+                      <h1 class="text-center">
+                        Заказать звонок
+                      </h1>
+                      <p class="text-center">Введите ваше имя и номер телефона, специалист компании свяжется с вами и ответит на ваши вопросы</p>
+                      <form>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона" required>
+                          </div>
+                          <div class="form-group text-center">
+                              <input class="btn" type="submit" value="Заказать звонок">
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- End Modal Заказать звонок -->
+
+    <!-- Start Modal Оставить заявку -->
+    <div class="modal fade mainModals" id="getFeedback" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <h1 class="text-center">
+                  Нужна помощь ?
+                </h1>
+                <p class="text-center">Введите ваше имя, номер телефона и сообщение, специалист компании свяжется с вами и ответит на ваши вопросы</p>
+                <form>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+                  </div>
+                  <div class="form-group">
+                      <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Введите Ваше сообщение"></textarea>
+                  </div>
+                  <div class="form-group text-center">
+                      <input class="btn" type="submit" value="Оставить зявку">
+                  </div>
+                </form>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Оставить заявку -->
+
+    <!-- Start Modal Каталог продукции -->
+    <div class="modal fade mainModals" id="catalogModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="container">
+                      <h1 class="text-center">
+                        Оформить заявку
+                      </h1>
+                      <p class="text-center">Введите ваше имя и номер телефона, специалист компании свяжется с вами и ответит на ваши вопросы</p>
+                      <form>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="name" placeholder="Укажите имя">
+                          </div>
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="phone" placeholder="Укажите номер телефона" required>
+                          </div>
+                          <input type="hidden" name="catalog_product" id="catalog_product_hidden">
+                          <div class="form-group text-center">
+                              <input class="btn" type="submit" value="Оформить заявку">
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- End Modal Каталог продукции -->
 
     <!-- Import Scripts -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
